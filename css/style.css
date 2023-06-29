@@ -1,0 +1,28 @@
+html, body {
+  font-size: 20px;
+}
+
+button {
+  font-size: 2rem;
+}
+button:focus-within {
+  outline: 5px solid black;
+}
+
+#faq-header {
+  border: 1px solid blue;
+  padding: 20px;
+  cursor: pointer;
+}
+#faq-header:hover {
+  background-color: #ddd;
+}
+#faq-header:focus-within {
+  outline: 5px solid black;
+}
+#faq-header.show {
+  color: red;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

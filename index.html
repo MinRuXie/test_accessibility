@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <p>Q. 被focus的div，如何按下enter也可以視為click?</p>
+    <p>A. 同時綁上click和keypress事件~</p>
+    
+    <div id="faq-header" tabindex="0" role="button">
+        <span>Q1. Are there setup and integration fees?</span>
+    </div>
+
+    <p>按鈕會獲得焦點嗎?</p>
+    <button>我是按鈕</button>
+    <button disabled>我是被禁用的按鈕</button>
+    <button tabindex="-1" aria-hidden="true">我是tabindex-1的按鈕</button>
+    <button>我是按鈕</button>
+
+    <span aria-hidden="false">*</span>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
