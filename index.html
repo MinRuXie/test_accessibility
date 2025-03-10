@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>無障礙網頁範本</title>
+</head>
+<body>
+    <noscript>
+        <p class="noscript">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態</p>
+    </noscript>
+  
+    <div class="accessibility">
+        <a href="#main-content" title="跳到主要內容區塊">跳到主要內容區塊</a>
+    </div>
+
+
+    <!-- Navigition -->
+    <header class="nav-wrap">
+        <div class="nav-upper">
+            <div class="nav-upper-inner">
+                <!-- 網站的 h1 設定在 LOGO -->
+                <h1>
+                    <a href="home.html" class="logo-wrap" title="網頁標題：回首頁">
+                        <img src="images/logo-nav.svg" alt="回首頁">
+                    </a>
+                    <strong style="display: none;">網頁標題</strong>
+                </h1>
+
+                <!-- 選單 -->
+                <nav class="nav-upper-content" aria-label="右上方功能選單">
+                    <!-- pc only -->
+                    <ul class="menu-list d-none d-xl-flex">
+                        <li class="menu-item"><a href="{{ route('backend.front_content.site_map')}}" title="移至網站導覽">網站導覽</a></li>
+                    </ul>
+                    <div class="nav-btn-wrap">
+                        <!-- 圖示按鈕 -->
+                        <button title="移至搜尋頁面" >
+                            <img src="image/btn.svg" alt="圖示描述">
+                        </button>
+
+                        <!-- 選單按鈕 collapse trigger (mobile only) -->
+                        <button class="menu-btn collapsed d-block d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" value="按鈕">按鈕<span></span><span></span><span></span></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <img src="images/default.png" alt="圖片描述">
+
+        <a href="www.google.com" title="移至Google搜尋引擎">Google搜尋引擎</a>
+        <a href="www.google.com" target="_blank" title="移至Google搜尋引擎(另開新視窗)">Google搜尋引擎(另開新視窗)</a>
+    </main>
+    
+</body>
+</html>
